@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate QR – QR Cloud</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+  <script src="assets/auth.js" defer></script>
+  <script src="assets/api.js" defer></script>
+  <script src="assets/script.js" defer></script>
+</head>
+
+<body>
+
+<nav class="topbar">
+  <h2>QR Cloud</h2>
+  <div>
+    <a href="dashboard.html" class="btn-secondary">Dashboard</a>
+    <button onclick="logout()" class="btn-secondary">Logout</button>
+  </div>
+</nav>
+
+<div class="page-center">
+  <div class="form-card">
+    <h2>Create QR Code</h2>
+
+    <label>Title</label>
+    <input id="qrTitle" type="text" placeholder="Product QR / Event Pass etc">
+
+    <label>Message / URL</label>
+    <input id="qrMessage" type="text" placeholder="Your message or URL">
+
+    <label>Expires In (hours)</label>
+    <input id="qrExpiry" type="number" value="24">
+
+    <label>QR Color</label>
+    <input id="qrColor" type="color" value="#e50914">
+
+    <button class="btn-primary" onclick="generateQR()">Generate</button>
+
+    <div id="qrResult" class="result-box hidden">
+      <h3>QR Generated</h3>
+
+      <img id="qrImage" src="" alt="QR Code">
+
+      <div class="btn-row">
+  <a id="downloadPng" class="btn-primary" target="_blank">Download PNG</a>
+  <a id="downloadPdf" class="btn-secondary" target="_blank">Download PDF</a>
+  <a href="analytics.html" class="btn-secondary">Analytics</a>
+</div>
+
+
+      <!-- ✅ SAFE ANALYTICS LINK -->
+      <div class="btn-row">
+        <a id="viewAnalytics" class="btn-secondary hidden" target="_blank">
+          View Analytics
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
