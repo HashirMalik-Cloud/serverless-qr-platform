@@ -1,5 +1,5 @@
 ############################################
-# modules/api_gateway/main.tf — Fixed CORS + Import-safe Authorizer
+# modules/api_gateway/main.tf
 ############################################
 
 data "aws_region" "current" {}
