@@ -1,5 +1,5 @@
 ##################################################
-# Root Terraform - infra/main.tf (FIXED, SAFE)
+# Root Terraform - infra/main.tf
 ##################################################
 
 ########################################
@@ -98,7 +98,7 @@ module "lambdas" {
 }
 
 #############################
-# 5) API Gateway Module (FIXED)
+# 5) API Gateway Module
 #############################
 module "api_gateway" {
   source              = "./modules/api_gateway"
