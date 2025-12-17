@@ -115,6 +115,3 @@ This project represents how I approach cloud engineering:
 If you’re reviewing this as a recruiter or engineer — feel free to explore the infrastructure and Lambda logic. Everything here is built intentionally.
 
 ---
-
-## 🗂️ Project Structure
-
